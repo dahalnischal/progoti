@@ -100,7 +100,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.image-responsive {
+.img-responsive {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -527,11 +527,6 @@ a {
   display: none;
 }
 // NAVBAR SECTION START HERE
-
-$color_1: #595959;
-$color_2: #ffffff;
-$color_3: #049247;
-
 .banner-section {
   background: url(../images/wall-bg.jpg);
   background-repeat: no-repeat;
@@ -746,7 +741,6 @@ $color_3: #049247;
   }
   p {
     margin-top: 15px;
-    color: $color_1;
   }
 }
 .title-wrapper.txt-center {
@@ -780,3 +774,21 @@ $color_3: #049247;
 .btns {
   margin-top: 35px;
 }
+// ABOUT SECTION START HERE
+.about-grid {
+  grid-template-columns: 1fr 1.2fr;
+  .img-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      height: 100%;
+      object-position: left;
+    }
+  }
+}
+.about-content {
+  padding-left: 60px;
+}
+// ABOUT SECTION END HERE
