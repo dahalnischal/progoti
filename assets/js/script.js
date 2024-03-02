@@ -9,9 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
       index++;
       setTimeout(typeWriter, 150); // Adjust typing speed
     } else {
-      // Hide loader and show site content
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("siteContent").style.display = "block";
+      // After typing effect is complete
+      setTimeout(function () {
+        // Hide the loader
+        document.getElementById("loader").style.display = "none";
+        // Show the site content
+        document.getElementById("siteContent").style.display = "block";
+        // Re-initialize AOS to ensure it works with newly visible elements
+        AOS.init();
+      }, 500); // Adjust this delay as needed to match with your site's UX
     }
   }
 
