@@ -73,6 +73,7 @@ $(document).ready(function () {
     spaceBetween: 60,
     // margin:20,
     loop: true,
+    speed: 1000,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -82,7 +83,7 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
     autoplay: {
-      delay: 9000,
+      delay: 4000,
       running: true,
     },
     breakpoints: {
@@ -197,7 +198,7 @@ var swiper = new Swiper(".partnersSwiper", {
   },
 
   autoplay: {
-    delay: 9000,
+    delay: 4000,
     running: true,
   },
   breakpoints: {
@@ -260,3 +261,17 @@ $titleTab.on("click", function (e) {
     $(this).next().find("p").addClass("show");
   }
 });
+// POPUP-VIDEO START
+
+$(document).ready(function () {
+  $(".popup-youtube").magnificPopup({
+    disableOn: 700,
+    type: "iframe",
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: false,
+  });
+});
+// POPUP-VIDEO END

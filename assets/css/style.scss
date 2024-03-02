@@ -913,7 +913,69 @@ a {
   padding-left: 60px;
 }
 // ABOUT SECTION END HERE
+// VIDEO BACKGROUND SECTION START HERE
+.video-background {
+  background: url(../images/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  background-attachment: fixed;
 
+  .pulse {
+    height: 80px;
+    width: 80px;
+    background: $white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 50px;
+    color: #ffffff;
+    i {
+      font-size: 20px;
+      z-index: 2;
+      position: relative;
+      color: $primary;
+    }
+  }
+  .pulse:before,
+  .pulse:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $white;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.7;
+  }
+  .pulse:before {
+    animation: pulse 2s ease-out infinite;
+  }
+  .pulse:after {
+    animation: pulse 2s 1s ease-out infinite;
+  }
+  @keyframes pulse {
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+}
+// VIDEO BACKGROUND SECTION END HERE
 // FAQ
 .wave {
   position: absolute;
@@ -1210,6 +1272,51 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 // CONTACT SECTION END HERE
+// POPULAR COUNTRY SECTION START HERE
+.popular {
+  .heading {
+    width: 65%;
+    margin: auto;
+  }
+}
+.country-card {
+  background: $white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: $food-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: $transition;
+  .country-details {
+    transition: $transition;
+    h2 {
+      font-size: 25px;
+      color: $green;
+      font-family: "Pacifico", cursive;
+      margin-bottom: 5px;
+    }
+    h3 {
+      margin-bottom: 5px;
+    }
+  }
+  .country-flag {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &:hover {
+    transition: $transition;
+    background: $main;
+    .country-details {
+      color: $white;
+      transition: $transition;
+    }
+  }
+}
+// POPULAR COUNTRY SECTION END HERE
 /* TESTIMONIAL SECTION START HERE */
 .tesSwiper {
   margin-top: 30px;
@@ -1480,7 +1587,7 @@ textarea {
       height: 640px;
       .mask-img {
         position: absolute;
-        width: auto;
+        width: 100%;
       }
     }
   }
