@@ -143,6 +143,7 @@ var swiper = new Swiper(".tesSwiper", {
   spaceBetween: 60,
   // margin:20,
   loop: true,
+  speed: 1000,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
