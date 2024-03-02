@@ -84,7 +84,7 @@ $(document).ready(function () {
     },
     autoplay: {
       delay: 4000,
-      running: true,
+      disableOnInteraction: false,
     },
     breakpoints: {
       0: {
@@ -127,7 +127,8 @@ $(document).ready(function () {
       crossFade: true,
     },
     autoplay: {
-      delay: 8000,
+      delay: 4000,
+      disableOnInteraction: false,
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -151,8 +152,8 @@ var swiper = new Swiper(".tesSwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 9000,
-    running: true,
+    delay: 4000,
+    disableOnInteraction: false,
   },
   breakpoints: {
     0: {
@@ -192,6 +193,7 @@ var swiper = new Swiper(".partnersSwiper", {
   spaceBetween: 60,
   // margin:20,
   loop: true,
+  speed: 1000,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -199,7 +201,7 @@ var swiper = new Swiper(".partnersSwiper", {
 
   autoplay: {
     delay: 4000,
-    running: true,
+    disableOnInteraction: false,
   },
   breakpoints: {
     0: {
