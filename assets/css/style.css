@@ -687,8 +687,8 @@ a {
   object-fit: cover;
   left: 70px;
   z-index: 1;
-  -webkit-mask-image: url("../images/mask-banner.svg");
-  mask-image: url("../images/mask-banner.svg");
+  -webkit-mask-image: url("../images/Path\ 3.svg");
+  mask-image: url("../images/Path\ 3.svg");
   mask-mode: alpha;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
