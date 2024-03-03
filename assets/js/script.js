@@ -69,23 +69,33 @@ $(document).ready(function () {
   // PARTNERS
 
   var swiper = new Swiper(".moneySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 60,
-    // margin:20,
-    loop: true,
-    speed: 1000,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    speed: 4000,
+    autoplay: {
+      delay: 0,
     },
+    loop: true,
+    slidesPerView: "auto",
+    allowTouchMove: false,
+    disableOnInteraction: true,
+    // slidesPerView: 3,
+    // spaceBetween: 60,
+    // // margin:20,
+    // loop: true,
+    // speed: 1000,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 100,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       0: {
         slidesPerView: 2,
