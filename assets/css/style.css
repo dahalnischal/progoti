@@ -1608,7 +1608,7 @@ textarea {
 }
 
 .map-card {
-  padding: 30px 25px;
+  padding: 30px 35px;
   background: #f9fbfb;
   border-radius: 8px;
   /* box-shadow: 0px 6px 42px rgba(140, 192, 88, 0.1411764706); */
@@ -1636,8 +1636,14 @@ textarea {
 
 .info-wraps .contact-info {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.info-wraps .contact-info i {
+  margin-top: 6px;
+  color: #049247;
+  font-size: 18px;
 }
 
 .info-wraps .contact-info a {
