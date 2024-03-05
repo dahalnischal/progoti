@@ -1249,7 +1249,7 @@ a {
 
 .video-background .quotes-side {
   position: absolute;
-  right: 20px;
+  right: 20%;
   background: #a7c63873;
   padding: 35px 30px;
   width: 420px;
@@ -1471,13 +1471,13 @@ textarea {
 
 .update-wrapper .swiper-button-prev {
   position: absolute;
-  left: -10%;
+  left: -5%;
 
 }
 
 .update-wrapper .swiper-button-next {
   position: absolute;
-  right: -10%;
+  right: -5%;
 
 }
 
