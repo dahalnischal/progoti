@@ -1640,6 +1640,10 @@ textarea {
   gap: 8px;
 }
 
+.info-wraps .contact-info a {
+  word-break: break-all;
+}
+
 .info-wraps .contact-info h4 {
   color: #a7c638;
   font-size: 18px;
@@ -2997,6 +3001,14 @@ textarea {
     gap: 8px;
   }
 
+  .banner-swiper .swiper-button-prev {
+    display: none;
+  }
+
+  .banner-swiper .swiper-button-next {
+    display: none;
+  }
+
   .video-background {
 
     min-height: 650px;
@@ -3026,6 +3038,11 @@ textarea {
   .update-wrapper .swiper-button-next {
     right: -2%;
     top: 60%;
+  }
+
+  .links-wraps {
+
+    align-items: center;
   }
 }
 
