@@ -1225,6 +1225,65 @@ a {
     top: -250px;
   }
 }
+// LATEST UPDATE SECTION START HERE
+.update-card {
+  position: relative;
+  width: 100%;
+  background: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: $card-shadow;
+  transition: $transition;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background: $green;
+    right: 0;
+    bottom: 0;
+    transition: $transition;
+  }
+  .images {
+    position: relative;
+    width: 100%;
+    height: 247px;
+    overflow: hidden;
+    img {
+      transition: $transition;
+    }
+    .tag {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 10px 20px;
+      background: $green;
+      color: $white;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-rows: 80px auto;
+    padding: 25px 20px 30px;
+    h4 {
+      margin-top: 25px;
+    }
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+      left: 0;
+      transition: $transition;
+    }
+    .images {
+      img {
+        transform: scale(1.1);
+        transition: $transition;
+      }
+    }
+  }
+}
+// LATEST UPDATE SECTION END HERE
 // CONTACT SECTION START HERE
 .contact-grid {
   display: grid;
@@ -1273,49 +1332,49 @@ textarea {
 }
 // CONTACT SECTION END HERE
 // POPULAR COUNTRY SECTION START HERE
-.popular {
-  .heading {
-    width: 65%;
-    margin: auto;
-  }
-}
-.country-card {
-  background: $white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: $food-shadow;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: $transition;
-  .country-details {
-    transition: $transition;
-    h2 {
-      font-size: 25px;
-      color: $green;
-      font-family: "Pacifico", cursive;
-      margin-bottom: 5px;
-    }
-    h3 {
-      margin-bottom: 5px;
-    }
-  }
-  .country-flag {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  &:hover {
-    transition: $transition;
-    background: $main;
-    .country-details {
-      color: $white;
-      transition: $transition;
-    }
-  }
-}
+// .popular {
+//   .heading {
+//     width: 65%;
+//     margin: auto;
+//   }
+// }
+// .country-card {
+//   background: $white;
+//   padding: 30px;
+//   border-radius: 10px;
+//   box-shadow: $food-shadow;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   cursor: pointer;
+//   transition: $transition;
+//   .country-details {
+//     transition: $transition;
+//     h2 {
+//       font-size: 25px;
+//       color: $green;
+//       font-family: "Pacifico", cursive;
+//       margin-bottom: 5px;
+//     }
+//     h3 {
+//       margin-bottom: 5px;
+//     }
+//   }
+//   .country-flag {
+//     width: 80px;
+//     height: 80px;
+//     border-radius: 50%;
+//     overflow: hidden;
+//   }
+//   &:hover {
+//     transition: $transition;
+//     background: $main;
+//     .country-details {
+//       color: $white;
+//       transition: $transition;
+//     }
+//   }
+// }
 // POPULAR COUNTRY SECTION END HERE
 /* TESTIMONIAL SECTION START HERE */
 .tesSwiper {
