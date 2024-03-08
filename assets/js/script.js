@@ -78,6 +78,18 @@ $(document).ready(function () {
       top: e.pageY, // Adjust this value as needed to position the tooltip
     });
   });
+  $("#country_selector").countrySelect({
+    // defaultCountry: "jp",
+    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+    // responsiveDropdown: true,
+    preferredCountries: ["ca", "gb", "us"],
+  });
+  $("#country_selector1").countrySelect({
+    // defaultCountry: "jp",
+    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+    // responsiveDropdown: true,
+    preferredCountries: ["ca", "gb", "us"],
+  });
 });
 
 // POPUP-VIDEO START

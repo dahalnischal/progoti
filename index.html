@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/countrySelect.css">
     <link rel="stylesheet" type='text/css' media='screen' href="assets/css/style.css">
 </head>
 
@@ -392,6 +393,38 @@
                     </div>
                     <div class="swiper-button-next">
                         <img src="assets/images/next.svg" alt="" class="icon">
+                    </div>
+
+
+                    <div class="currency-wraps mt-35">
+                        <h3>Currency Converter</h3>
+                        <div class="flex-wraps">
+                            <div class="input-wrap">
+                                <input type="text" placeholder="Amount">
+                                <input id="country_selector" type="text">
+                                <!-- <select name="" id="">
+                                    <option value="usd">USD</option>
+                                    <option value="inr">INR</option>
+                                    <option value="bdt">BDT</option>
+                                    <option value="php">PHP</option>
+                                    <option value="kwd">KWD</option>
+                                </select> -->
+                            </div>
+                            <div>To</div>
+                            <div class="input-wrap">
+                                <!-- <select name="" id="">
+                                    <option value="usd">USD</option>
+                                    <option value="inr">INR</option>
+                                    <option value="bdt">BDT</option>
+                                    <option value="php">PHP</option>
+                                    <option value="kwd">KWD</option>
+                                </select> -->
+                                <input id="country_selector1" type="text">
+                                <button class="primary-btn">Convert</button>
+                                <input type=" text" readonly placeholder="1 AED">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -3352,6 +3385,22 @@
                     </div>
 
                 </div>
+                <div class="footer-fixed">
+                    <div class="fixed-wraps">
+                        <div class="fixed-links">
+                            <a href=""><i class="fa-solid fa-code-branch"></i>Branches</a>
+                        </div>
+                        <div class="fixed-links">
+                            <a href=""><i class="fa-brands fa-servicestack"></i>Services</a>
+                        </div>
+                        <div class="fixed-links">
+                            <a href=""><i class="fa-solid fa-headphones"></i> Contact Us</a>
+                        </div>
+                        <div class="fixed-links">
+                            <a href=""><i class="fa-solid fa-phone"></i>Call Now</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -3362,6 +3411,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/countrySelect.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

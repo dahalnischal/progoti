@@ -1009,6 +1009,47 @@ a {
   margin-right: 5px;
 }
 
+.currency-wraps {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency-wraps h3 {
+  color: #049247;
+  font-size: 18px;
+  width: 275px;
+}
+
+.currency-wraps .flex-wraps {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.currency-wraps .flex-wraps .input-wrap {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.currency-wraps .flex-wraps input,
+select {
+  padding: 8px 12px;
+}
+
+.currency-wraps .flex-wraps select {
+  padding: 8px 10px;
+}
+
+.currency-wraps .flex-wraps .primary-btn {
+  width: 165px;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
 .about-grid {
   grid-template-columns: 1fr 1.2fr;
 }
@@ -1442,6 +1483,16 @@ a {
 input {
   width: 100%;
   padding: 15px 20px;
+  border: 2px solid #e6e6e6;
+  border-radius: 2px;
+  color: #757575;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  width: 110px;
+  padding: 15px 10px;
   border: 2px solid #e6e6e6;
   border-radius: 2px;
   color: #757575;
@@ -2935,6 +2986,10 @@ textarea {
     gap: 12px;
   }
 
+  .footer {
+    padding-bottom: 55px;
+  }
+
   .footer-slip {
     padding: 25px;
     transform: translateY(-60px);
@@ -3049,6 +3104,65 @@ textarea {
   .links-wraps {
 
     align-items: center;
+  }
+
+  .footer-fixed {
+    padding: 10px;
+    background: #729100;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .fixed-wraps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
+  .fixed-logo img {
+    width: 25px;
+  }
+
+  .fixed-logo a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .fixed-links {
+    position: relative;
+  }
+
+  .fixed-links::before {
+    content: "";
+    position: absolute;
+    right: -40%;
+    top: 10%;
+    width: 1px;
+    height: 80%;
+    background: #fff;
+  }
+
+  .fixed-links:nth-last-child(1)::before {
+    display: none;
+  }
+
+  .fixed-links a {
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .fixed-links a i {
+    font-size: 14px;
   }
 }
 
