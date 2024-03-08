@@ -2484,14 +2484,11 @@ textarea {
   }
 
   .exchange-card .swiper-button-prev {
-    top: 40px;
-    left: auto;
-    right: 90px;
+    display: none;
   }
 
   .exchange-card .swiper-button-next {
-    top: 40px;
-    right: 50px;
+    display: none;
   }
 
   .moneySwiper .swiper-wrapper {
@@ -2717,6 +2714,49 @@ textarea {
   .end a {
     font-size: 15px;
   }
+
+  .currency-wraps {
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .currency-wraps h3 {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .currency-wraps .flex-wraps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .currency-wraps .flex-wraps .input-wrap {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .currency-wraps .flex-wraps input,
+  select {
+    padding: 8px 12px;
+  }
+
+  .currency-wraps .flex-wraps select {
+    padding: 8px 10px;
+  }
+
+  .currency-wraps .flex-wraps .primary-btn {
+    width: 165px;
+    align-items: center;
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+
+
 }
 
 @media (max-width: 650px) {
@@ -3163,6 +3203,21 @@ textarea {
 
   .fixed-links a i {
     font-size: 14px;
+  }
+
+  .currency-wraps .flex-wraps .input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .currency-wraps .flex-wraps .primary-btn {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    cursor: pointer;
   }
 }
 
